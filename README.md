@@ -131,9 +131,15 @@ Previously built a static HTML & CSS layout during an Edunet Internship, which h
 
 ---
 
-## ⏱️ **Time Taken**
+## Time Taken
 
-⏰ Approximately **17 hours** total (planning → deployment)
+⏳ Total work time: about 8 to 10 hours
+
+• 🔧 5 to 6 hours were spent earlier during an Edunet internship to build the plain HTML and CSS base  
+• 🧩 1 to 2 hours for adding Bootstrap components and fixing layout and spacing  
+• ✍️ 45 minutes for JavaScript (form validation and carousel toggle)  
+• 📱 30 minutes for responsiveness checks and small fixes  
+• 📝 20 minutes for README writing and reflection
 
 ---
 
