@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Udayverse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-muted-udv d-flex flex-column min-vh-100">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-udv">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Udayverse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Work with us</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-grow-1 py-5">
+  <div class="container">
+    <!-- Mission -->
+    <section class="mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h1 class="fw-bold">A place to remix & learn</h1>
+          <p class="lead">A place where students remix UI components to learn building real pages.</p>
+          <p>We take Bootstrap’s building blocks and turn them into practical, deployable layouts. Less copy-paste, more understanding.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://picsum.photos/800/500?blur=1" class="img-fluid rounded-3" alt="Students collaborating on UI design">
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline / Milestones -->
+    <section class="mb-5">
+      <h2 class="h3 fw-semibold mb-4">Milestones</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5">2024 — Spark</h3>
+              <p>Prototype patterns for landing pages and portfolios using Bootstrap 5.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5">2025 — Udayverse</h3>
+              <p>Launched a student-centric remix library with accessible, semantic markup.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5">Next — Community</h3>
+              <p>Open contributions, examples, and templates for rapid learning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section>
+      <h2 class="h3 fw-semibold mb-4">Team</h2>
+      <div class="row g-4 row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/300?random=11" class="card-img-top" alt="Portrait of UDAY">
+            <div class="card-body">
+              <h3 class="h5">UDAY</h3>
+              <p class="text-secondary">Creator & UI tinkerer</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalUday" aria-haspopup="dialog">Read bio</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/300?random=12" class="card-img-top" alt="Portrait of Priya Sharma">
+            <div class="card-body">
+              <h3 class="h5">Priya Sharma</h3>
+              <p class="text-secondary">Designer</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPriya">Read bio</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/300?random=13" class="card-img-top" alt="Portrait of Arjun Patel">
+            <div class="card-body">
+              <h3 class="h5">Arjun Patel</h3>
+              <p class="text-secondary">Developer</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalArjun">Read bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="bg-dark-udv text-light mt-auto pt-5 pb-3">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+      <small class="text-secondary">© <span id="year"></span> Udayverse</small>
+      <small class="text-secondary">Built with 💙 by <span class="fw-semibold">UDAY</span></small>
+    </div>
+  </div>
+</footer>
+
+<!-- Team Modals -->
+<div class="modal fade" id="modalUday" tabindex="-1" aria-labelledby="modalUdayLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalUdayLabel">UDAY — Creator & UI tinkerer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>UDAY founded Udayverse to help students learn by remixing Bootstrap into real pages. He cares about clarity, practicality, and accessibility.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalPriya" tabindex="-1" aria-labelledby="modalPriyaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalPriyaLabel">Priya Sharma — Designer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Priya focuses on visual hierarchy and typography. She loves turning wireframes into polished interfaces.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalArjun" tabindex="-1" aria-labelledby="modalArjunLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalArjunLabel">Arjun Patel — Developer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Arjun prototypes with HTML/CSS/JS and ensures performance on low-end devices.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

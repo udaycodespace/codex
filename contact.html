@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Udayverse</title>
+  <meta name="description" content="Contact Udayverse. Send a message and we’ll get back to you.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-muted-udv d-flex flex-column min-vh-100">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-udv">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Udayverse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-grow-1 py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <h1 class="fw-bold mb-3">Get in touch</h1>
+        <p class="text-secondary">Form must show validation states and a success alert on submit.</p>
+
+        <!-- Success alert (hidden by default) -->
+        <div id="successAlert" class="alert alert-success d-none" role="alert" aria-live="polite">
+          <i class="bi bi-check-circle-fill"></i> Thanks! Your message has been sent.
+        </div>
+
+        <form id="contactForm" name="contact" method="POST" data-netlify="true" novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required aria-describedby="nameHelp" aria-invalid="false">
+            <div class="invalid-feedback" id="nameHelp">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required aria-invalid="false">
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" required aria-invalid="false">
+            <div class="invalid-feedback">Please enter a subject.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" name="message" rows="5" required aria-invalid="false"></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <div class="d-grid d-sm-flex gap-2">
+            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="reset" class="btn btn-outline-secondary">Clear</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h5">Contact info</h2>
+            <p class="mb-1"><i class="bi bi-envelope"></i> hello@udayverse.example</p>
+            <p class="mb-0"><i class="bi bi-globe"></i> udayverse.github.io</p>
+          </div>
+        </div>
+        <div class="card mt-3 shadow-sm">
+          <div class="card-body">
+            <h2 class="h6 text-uppercase text-secondary mb-2">Notes</h2>
+            <p class="mb-0 small">This is a working client-side validated form. On Netlify, submissions are captured automatically via the <code>data-netlify</code> attribute.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-dark-udv text-light mt-auto pt-5 pb-3">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+      <small class="text-secondary">© <span id="year"></span> Udayverse</small>
+      <small class="text-secondary">Built with 💙 by <span class="fw-semibold">UDAY</span></small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

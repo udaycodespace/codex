@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Udayverse — Explore. Design. Build.</title>
+  <meta name="description" content="Student-focused UI patterns, step-by-step examples, and polished Bootstrap components.">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-muted-udv d-flex flex-column min-vh-100">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-udv" aria-label="Primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Udayverse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="#examples" class="btn btn-accent-udv">See Examples</a>
+          <a href="contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="content" class="flex-grow-1">
+  <!-- Hero Carousel -->
+  <section class="position-relative">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" aria-label="Featured content">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1200/500?random=1" class="d-block w-100 object-fit-cover" alt="Abstract gradient background">
+          <div class="carousel-caption text-start">
+            <h1 class="fw-bold">Udayverse — Explore. Design. Build.</h1>
+            <p class="lead">Student-focused UI patterns, step-by-step examples, and polished Bootstrap components.</p>
+            <p>
+              <a class="btn btn-primary btn-lg me-2" href="#examples">See Examples</a>
+              <a class="btn btn-outline-light btn-lg" href="services.html">What we offer</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1200/500?random=2" class="d-block w-100 object-fit-cover" alt="Code and UI layout on screen">
+          <div class="carousel-caption">
+            <h2 class="fw-semibold">Remix Bootstrap components</h2>
+            <p>Learn by combining navbars, cards, carousels, forms, and modals into real pages.</p>
+            <p><a class="btn btn-accent-udv btn-lg" href="about.html">Our story</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1200/500?random=3" class="d-block w-100 object-fit-cover" alt="Collaborative team working at a table">
+          <div class="carousel-caption text-end">
+            <h2 class="fw-semibold">Accessible, responsive, modern</h2>
+            <p>Keyboard-friendly, semantic markup with clear focus states.</p>
+            <p><a class="btn btn-outline-light btn-lg" href="contact.html">Start a conversation</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Pause/Play control -->
+    <div class="position-absolute top-0 end-0 p-3">
+      <button id="carouselToggle" class="btn btn-light btn-sm" aria-pressed="false" aria-label="Pause carousel">
+        <i class="bi bi-pause-fill" aria-hidden="true"></i> <span class="visually-hidden">Pause</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="examples" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Explore the patterns</h2>
+        <p class="text-secondary">Original remixes of Bootstrap components tailored for students.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3 display-6"><i class="bi bi-layers"></i></div>
+              <h3 class="h5">Component Combos</h3>
+              <p class="mb-0">Blend navbars, cards, modals, and accordions into cohesive pages.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3 display-6"><i class="bi bi-phone"></i></div>
+              <h3 class="h5">Responsive by Default</h3>
+              <p class="mb-0">Mobile-first layouts using Bootstrap utilities and grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3 display-6"><i class="bi bi-universal-access-circle"></i></div>
+              <h3 class="h5">Accessibility Matters</h3>
+              <p class="mb-0">Semantic tags, visible focus, and keyboard-friendly dialogs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5 bg-body">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">What students say</h2>
+        <p class="text-secondary">Small wins, consistent progress.</p>
+      </div>
+      <div class="row g-4 row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>“Remixing the components made Bootstrap finally click for me.”</p>
+                <footer class="blockquote-footer">Aarav, CS Undergrad</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>“Clean markup, practical patterns, and accessible defaults.”</p>
+                <footer class="blockquote-footer">Meera, Front-end Learner</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>“I shipped my first portfolio using these ideas.”</p>
+                <footer class="blockquote-footer">Rahul, Intern</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-dark-udv text-light mt-auto pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <h5>Udayverse</h5>
+        <ul class="list-unstyled">
+          <li><a class="link-light text-opacity-75" href="about.html">About</a></li>
+          <li><a class="link-light text-opacity-75" href="services.html">Services</a></li>
+          <li><a class="link-light text-opacity-75" href="blog.html">Blog</a></li>
+          <li><a class="link-light text-opacity-75" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>Resources</h5>
+        <ul class="list-unstyled">
+          <li><a class="link-light text-opacity-75" href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a></li>
+          <li><a class="link-light text-opacity-75" href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Icons</a></li>
+          <li><a class="link-light text-opacity-75" href="https://picsum.photos/" target="_blank" rel="noopener">Picsum</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <h5>Newsletter</h5>
+        <form class="row g-2" action="#" method="post" aria-label="Subscribe">
+          <div class="col-12 col-sm-8">
+            <label for="subscribeEmail" class="visually-hidden">Email address</label>
+            <input id="subscribeEmail" type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div class="col-12 col-sm-4 d-grid">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr class="my-4 text-secondary">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+      <small class="text-secondary">© <span id="year"></span> Udayverse — Explore. Design. Build.</small>
+      <small class="text-secondary">Built with 💙 by <span class="fw-semibold" title="Easter egg">UDAY</span></small>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
