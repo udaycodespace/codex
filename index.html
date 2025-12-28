@@ -1,228 +1,306 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Udayverse — Explore. Design. Build.</title>
-  <meta name="description" content="Student-focused UI patterns, step-by-step examples, and polished Bootstrap components.">
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap Icons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODEX LABS — Learn. Build. Ship.</title>
+  <meta name="description" content="Neo-brutalist code education platform with radical design philosophy">
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Google Fonts (optional) -->
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-muted-udv d-flex flex-column min-vh-100">
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-udv" aria-label="Primary">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Udayverse</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <div class="d-flex gap-2">
-          <a href="#examples" class="btn btn-accent-udv">See Examples</a>
-          <a href="contact.html" class="btn btn-primary">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
+<body>
 
-<main id="content" class="flex-grow-1">
-  <!-- Hero Carousel -->
-  <section class="position-relative">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" aria-label="Featured content">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://picsum.photos/1200/500?random=1" class="d-block w-100 object-fit-cover" alt="Abstract gradient background">
-          <div class="carousel-caption text-start">
-            <h1 class="fw-bold">Udayverse — Explore. Design. Build.</h1>
-            <p class="lead">Student-focused UI patterns, step-by-step examples, and polished Bootstrap components.</p>
-            <p>
-              <a class="btn btn-primary btn-lg me-2" href="#examples">See Examples</a>
-              <a class="btn btn-outline-light btn-lg" href="services.html">What we offer</a>
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://picsum.photos/1200/500?random=2" class="d-block w-100 object-fit-cover" alt="Code and UI layout on screen">
-          <div class="carousel-caption">
-            <h2 class="fw-semibold">Remix Bootstrap components</h2>
-            <p>Learn by combining navbars, cards, carousels, forms, and modals into real pages.</p>
-            <p><a class="btn btn-accent-udv btn-lg" href="about.html">Our story</a></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://picsum.photos/1200/500?random=3" class="d-block w-100 object-fit-cover" alt="Collaborative team working at a table">
-          <div class="carousel-caption text-end">
-            <h2 class="fw-semibold">Accessible, responsive, modern</h2>
-            <p>Keyboard-friendly, semantic markup with clear focus states.</p>
-            <p><a class="btn btn-outline-light btn-lg" href="contact.html">Start a conversation</a></p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+<!-- Grain overlay -->
+<div class="grain-overlay"></div>
 
-    <!-- Pause/Play control -->
-    <div class="position-absolute top-0 end-0 p-3">
-      <button id="carouselToggle" class="btn btn-light btn-sm" aria-pressed="false" aria-label="Pause carousel">
-        <i class="bi bi-pause-fill" aria-hidden="true"></i> <span class="visually-hidden">Pause</span>
-      </button>
-    </div>
-  </section>
+<!-- Floating shapes -->
+<div class="shape shape-1"></div>
+<div class="shape shape-2"></div>
+<div class="shape shape-3"></div>
 
-  <!-- Features -->
-  <section id="examples" class="py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Explore the patterns</h2>
-        <p class="text-secondary">Original remixes of Bootstrap components tailored for students.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <div class="mb-3 display-6"><i class="bi bi-layers"></i></div>
-              <h3 class="h5">Component Combos</h3>
-              <p class="mb-0">Blend navbars, cards, modals, and accordions into cohesive pages.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <div class="mb-3 display-6"><i class="bi bi-phone"></i></div>
-              <h3 class="h5">Responsive by Default</h3>
-              <p class="mb-0">Mobile-first layouts using Bootstrap utilities and grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <div class="mb-3 display-6"><i class="bi bi-universal-access-circle"></i></div>
-              <h3 class="h5">Accessibility Matters</h3>
-              <p class="mb-0">Semantic tags, visible focus, and keyboard-friendly dialogs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-bracket">[</span>
+      <span class="brand-text">CODEX</span>
+      <span class="brand-bracket">]</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-cta ms-3">START NOW</a>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <!-- Testimonials -->
-  <section class="py-5 bg-body">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">What students say</h2>
-        <p class="text-secondary">Small wins, consistent progress.</p>
-      </div>
-      <div class="row g-4 row-cols-1 row-cols-md-3">
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>“Remixing the components made Bootstrap finally click for me.”</p>
-                <footer class="blockquote-footer">Aarav, CS Undergrad</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>“Clean markup, practical patterns, and accessible defaults.”</p>
-                <footer class="blockquote-footer">Meera, Front-end Learner</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>“I shipped my first portfolio using these ideas.”</p>
-                <footer class="blockquote-footer">Rahul, Intern</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="bg-dark-udv text-light mt-auto pt-5 pb-3">
+<!-- Hero -->
+<section class="hero">
   <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-badge">AVAILABLE NOW</div>
+        <h1 class="hero-title">
+          <span class="title-line">SELF</span>
+          <span class="title-line">LEARN</span>
+          <span class="title-line">CODE</span>
+        </h1>
+        <p class="hero-subtitle">Brutalist code school for misfits. No buzzwords, no hand-holding — just shipping‑grade skills.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary">EXPLORE COURSES</a>
+          <a href="about.html" class="btn btn-outline">OUR MANIFESTO</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">STUDENTS</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">COURSES</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">HIRED</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-image">
+          <div class="image-frame"></div>
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Coding workspace" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="courses" class="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">// WHAT WE OFFER</span>
+      <h2 class="section-title">BREAK THE MOLD</h2>
+    </div>
+    
     <div class="row g-4">
-      <div class="col-6 col-md-3">
-        <h5>Udayverse</h5>
-        <ul class="list-unstyled">
-          <li><a class="link-light text-opacity-75" href="about.html">About</a></li>
-          <li><a class="link-light text-opacity-75" href="services.html">Services</a></li>
-          <li><a class="link-light text-opacity-75" href="blog.html">Blog</a></li>
-          <li><a class="link-light text-opacity-75" href="contact.html">Contact</a></li>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card" data-delay="0">
+          <div class="card-number">01</div>
+          <div class="card-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h3 class="card-title">FULL-STACK DEV</h3>
+          <p class="card-text">MERN, Next.js, GraphQL. Build production apps from day one.</p>
+          <a href="courses.html" class="card-link">LEARN MORE →</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card" data-delay="1">
+          <div class="card-number">02</div>
+          <div class="card-icon">
+            <i class="bi bi-gpu-card"></i>
+          </div>
+          <h3 class="card-title">AI/ML ENGINEERING</h3>
+          <p class="card-text">PyTorch, TensorFlow. Train models, deploy to production.</p>
+          <a href="courses.html" class="card-link">LEARN MORE →</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card" data-delay="2">
+          <div class="card-number">03</div>
+          <div class="card-icon">
+            <i class="bi bi-bezier2"></i>
+          </div>
+          <h3 class="card-title">UI/UX DESIGN</h3>
+          <p class="card-text">Figma, Framer. Design systems that actually ship.</p>
+          <a href="courses.html" class="card-link">LEARN MORE →</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card" data-delay="3">
+          <div class="card-number">04</div>
+          <div class="card-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+          <h3 class="card-title">CYBERSECURITY</h3>
+          <p class="card-text">Penetration testing. Ethical hacking. Real-world scenarios.</p>
+          <a href="courses.html" class="card-link">LEARN MORE →</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card" data-delay="4">
+          <div class="card-number">05</div>
+          <div class="card-icon">
+            <i class="bi bi-cloud-arrow-up"></i>
+          </div>
+          <h3 class="card-title">DEVOPS & CLOUD</h3>
+          <p class="card-text">AWS, Docker, K8s. Automate everything.</p>
+          <a href="courses.html" class="card-link">LEARN MORE →</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card" data-delay="5">
+          <div class="card-number">06</div>
+          <div class="card-icon">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+          <h3 class="card-title">BLOCKCHAIN DEV</h3>
+          <p class="card-text">Solidity, Web3. Build decentralized apps.</p>
+          <a href="courses.html" class="card-link">LEARN MORE →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="cta-title">READY TO LEVEL UP?</h2>
+      <p class="cta-text">Join 10,000+ developers building the future.</p>
+      <a href="contact.html" class="btn btn-cta-large">GET STARTED NOW</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">// STUDENT STORIES</span>
+      <h2 class="section-title">REAL RESULTS</h2>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Landed a $120k job at Google. CODEX taught me how to actually think like an engineer.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div>
+              <div class="author-name">ANANYA KUMAR</div>
+              <div class="author-role">Software Engineer @ Google</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">From zero to full-stack in 6 months. Built 3 production apps. Got hired before graduation.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div>
+              <div class="author-name">RAHUL SHARMA</div>
+              <div class="author-role">Full-Stack Dev @ Startup</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">No fluff. No theory. Just hands-on projects that matter. Best investment I ever made.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PM</div>
+            <div>
+              <div class="author-name">PRIYA MEHTA</div>
+              <div class="author-role">ML Engineer @ Microsoft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <span class="brand-bracket">[</span>
+          <span class="brand-text">CODEX</span>
+          <span class="brand-bracket">]</span>
+        </div>
+        <p class="footer-tagline">Neo-brutalist code education. Built different.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="col-6 col-lg-2">
+        <h3 class="footer-heading">LEARN</h3>
+        <ul class="footer-links">
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">Bootcamps</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Resources</a></li>
         </ul>
       </div>
-      <div class="col-6 col-md-3">
-        <h5>Resources</h5>
-        <ul class="list-unstyled">
-          <li><a class="link-light text-opacity-75" href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a></li>
-          <li><a class="link-light text-opacity-75" href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Icons</a></li>
-          <li><a class="link-light text-opacity-75" href="https://picsum.photos/" target="_blank" rel="noopener">Picsum</a></li>
+      
+      <div class="col-6 col-lg-2">
+        <h3 class="footer-heading">COMPANY</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="col-12 col-md-6">
-        <h5>Newsletter</h5>
-        <form class="row g-2" action="#" method="post" aria-label="Subscribe">
-          <div class="col-12 col-sm-8">
-            <label for="subscribeEmail" class="visually-hidden">Email address</label>
-            <input id="subscribeEmail" type="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-          <div class="col-12 col-sm-4 d-grid">
-            <button class="btn btn-primary" type="submit">Subscribe</button>
-          </div>
+      
+      <div class="col-lg-4">
+        <h3 class="footer-heading">NEWSLETTER</h3>
+        <p class="footer-text">Weekly insights. No spam. Unsubscribe anytime.</p>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="YOUR EMAIL" required>
+          <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
         </form>
       </div>
     </div>
-    <hr class="my-4 text-secondary">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
-      <small class="text-secondary">© <span id="year"></span> Udayverse — Explore. Design. Build.</small>
-      <small class="text-secondary">Built with 💙 by <span class="fw-semibold" title="Easter egg">UDAY</span></small>
+    
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CODEX LABS. ALL RIGHTS RESERVED.</p>
+      <p>DESIGNED WITH INTENT. BUILT WITH PURPOSE.</p>
+      <p class="disclaimer">* All statistics, testimonials, and company names are fictional and for demonstration purposes only.</p>
     </div>
   </div>
 </footer>
 
-<!-- Bootstrap Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<!-- Custom JS -->
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>

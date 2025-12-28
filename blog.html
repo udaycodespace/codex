@@ -1,89 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog — Udayverse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — CODEX LABS</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-muted-udv d-flex flex-column min-vh-100">
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-udv">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Udayverse</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary">Subscribe</a>
+<body>
+
+<div class="grain-overlay"></div>
+<div class="shape shape-1"></div>
+<div class="shape shape-2"></div>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-bracket">[</span>
+      <span class="brand-text">CODEX</span>
+      <span class="brand-bracket">]</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-cta ms-3">START NOW</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-title">TECH INSIGHTS</h1>
+    <p class="page-subtitle">No fluff. Just practical knowledge from the trenches.</p>
+  </div>
+</section>
+
+<!-- Filter Section -->
+<section class="filter-section">
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">ALL POSTS</button>
+      <button class="filter-tab" data-filter="tutorials">TUTORIALS</button>
+      <button class="filter-tab" data-filter="career">CAREER</button>
+      <button class="filter-tab" data-filter="tech">TECH NEWS</button>
+      <button class="filter-tab" data-filter="opinion">OPINION</button>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Post -->
+<section class="featured-post-section">
+  <div class="container">
+    <div class="featured-post">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <div class="featured-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80" alt="AI Code Generation">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="featured-content">
+            <span class="featured-badge">FEATURED</span>
+            <span class="featured-category">AI & ML</span>
+            <h2 class="featured-title">AI Code Generation: Hype vs Reality in 2025</h2>
+            <p class="featured-excerpt">We tested 5 AI coding assistants on real production code. Here's what actually works and what's just marketing BS.</p>
+            <div class="featured-meta">
+              <span><i class="bi bi-person"></i> ARJUN SINGH</span>
+              <span><i class="bi bi-calendar3"></i> DEC 20, 2025</span>
+              <span><i class="bi bi-clock"></i> 8 MIN READ</span>
+            </div>
+            <a href="#article" class="btn btn-primary">READ MORE</a>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
-
-<main class="flex-grow-1 py-5">
-  <div class="container">
-    <section class="mb-4">
-      <div class="d-flex flex-wrap gap-2 align-items-center">
-        <span class="fw-semibold">Filter:</span>
-        <button class="btn btn-sm btn-outline-primary active" type="button">All</button>
-        <button class="btn btn-sm btn-outline-primary" type="button">Components</button>
-        <button class="btn btn-sm btn-outline-primary" type="button">Accessibility</button>
-        <button class="btn btn-sm btn-outline-primary" type="button">Guides</button>
-      </div>
-    </section>
-
-    <section class="mb-5">
-      <div class="row g-4 row-cols-1 row-cols-md-2">
-        <div class="col">
-          <article class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h2 class="h4"><a class="stretched-link text-decoration-none" href="#post-1">Remixing Bootstrap Cards</a></h2>
-              <p class="text-secondary mb-1"><time datetime="2025-10-01">2025-10-01</time> &middot; by UDAY</p>
-              <p>How I combined card groups and utilities to create a feature wall.</p>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h2 class="h4"><a class="stretched-link text-decoration-none" href="#post-2">Accessible Forms: Small Wins</a></h2>
-              <p class="text-secondary mb-1"><time datetime="2025-09-18">2025-09-18</time> &middot; by UDAY</p>
-              <p>Labeling, focus states, and inline validation patterns.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sample single-article layout -->
-    <article id="post-1" class="card shadow-sm">
-      <header class="card-body border-bottom">
-        <h1 class="card-title h3 mb-1">Remixing Bootstrap Cards</h1>
-        <p class="text-secondary mb-0"><time datetime="2025-10-01">2025-10-01</time> • by UDAY</p>
-      </header>
-      <div class="card-body">
-        <p>Cards are versatile. By combining grid utilities, equal-height cards, and subtle shadows, you can build a “feature wall.” Group related content and emphasize actions using buttons or links.</p>
-        <p>Remember: meaningful headings, alt text on images, and adequate color contrast keep things accessible.</p>
-      </div>
-    </article>
   </div>
-</main>
+</section>
 
-<footer class="bg-dark-udv text-light mt-auto pt-5 pb-3">
+<!-- Blog Grid -->
+<section class="blog-section">
   <div class="container">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
-      <small class="text-secondary">© <span id="year"></span> Udayverse</small>
-      <small class="text-secondary">Built with 💙 by <span class="fw-semibold">UDAY</span></small>
+    <div class="row g-4">
+      
+      <!-- Blog Post 1 -->
+      <div class="col-md-6 col-lg-4" data-category="tutorials">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=600&q=80" alt="React 19">
+            <div class="blog-category">TUTORIAL</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">React 19: What Changed and Why It Matters</h3>
+            <p class="blog-excerpt">Breaking down Server Components, Actions, and the new Compiler.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 18, 2025</span>
+              <span><i class="bi bi-clock"></i> 6 MIN</span>
+            </div>
+            <a href="#post1" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 2 -->
+      <div class="col-md-6 col-lg-4" data-category="career">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80" alt="Interview Prep">
+            <div class="blog-category career">CAREER</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">How I Got 5 FAANG Offers in 3 Months</h3>
+            <p class="blog-excerpt">Complete breakdown of my preparation strategy and interview experiences.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 15, 2025</span>
+              <span><i class="bi bi-clock"></i> 10 MIN</span>
+            </div>
+            <a href="#post2" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 3 -->
+      <div class="col-md-6 col-lg-4" data-category="tech">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=600&q=80" alt="Blockchain">
+            <div class="blog-category tech">TECH</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Solana vs Ethereum: Performance Benchmarks</h3>
+            <p class="blog-excerpt">Real-world testing of transaction speeds, costs, and developer experience.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 12, 2025</span>
+              <span><i class="bi bi-clock"></i> 7 MIN</span>
+            </div>
+            <a href="#post3" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 4 -->
+      <div class="col-md-6 col-lg-4" data-category="tutorials">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&q=80" alt="Docker">
+            <div class="blog-category">TUTORIAL</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Docker Compose for Full-Stack Apps</h3>
+            <p class="blog-excerpt">Multi-container setup with React, Node, PostgreSQL, and Redis.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 10, 2025</span>
+              <span><i class="bi bi-clock"></i> 12 MIN</span>
+            </div>
+            <a href="#post4" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 5 -->
+      <div class="col-md-6 col-lg-4" data-category="opinion">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Bootcamps">
+            <div class="blog-category opinion">OPINION</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Bootcamps Are Dying. Here's Why.</h3>
+            <p class="blog-excerpt">The harsh truth about coding bootcamps and what actually works in 2025.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 8, 2025</span>
+              <span><i class="bi bi-clock"></i> 5 MIN</span>
+            </div>
+            <a href="#post5" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 6 -->
+      <div class="col-md-6 col-lg-4" data-category="tech">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" alt="GPT-4">
+            <div class="blog-category tech">TECH</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">GPT-4 Turbo: Performance Deep Dive</h3>
+            <p class="blog-excerpt">Benchmarking speed, cost, and quality against GPT-4 and Claude 3.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 5, 2025</span>
+              <span><i class="bi bi-clock"></i> 9 MIN</span>
+            </div>
+            <a href="#post6" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 7 -->
+      <div class="col-md-6 col-lg-4" data-category="career">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Salary">
+            <div class="blog-category career">CAREER</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Salary Negotiation: My $80K Raise</h3>
+            <p class="blog-excerpt">Exact scripts and strategies I used to negotiate a massive pay bump.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 3, 2025</span>
+              <span><i class="bi bi-clock"></i> 8 MIN</span>
+            </div>
+            <a href="#post7" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 8 -->
+      <div class="col-md-6 col-lg-4" data-category="tutorials">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80" alt="TypeScript">
+            <div class="blog-category">TUTORIAL</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">TypeScript Patterns That Actually Matter</h3>
+            <p class="blog-excerpt">Advanced types, generics, and patterns for production codebases.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> DEC 1, 2025</span>
+              <span><i class="bi bi-clock"></i> 11 MIN</span>
+            </div>
+            <a href="#post8" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Blog Post 9 -->
+      <div class="col-md-6 col-lg-4" data-category="opinion">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Remote Work">
+            <div class="blog-category opinion">OPINION</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Remote Work Is Dead. Get Over It.</h3>
+            <p class="blog-excerpt">Why companies are forcing RTO and what developers can do about it.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> NOV 28, 2025</span>
+              <span><i class="bi bi-clock"></i> 6 MIN</span>
+            </div>
+            <a href="#post9" class="blog-link">READ MORE →</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+    
+    <!-- Load More -->
+    <div class="text-center mt-5">
+      <button class="btn btn-outline-large">LOAD MORE POSTS</button>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="newsletter-cta">
+  <div class="container">
+    <div class="newsletter-box">
+      <h2 class="newsletter-title">GET WEEKLY INSIGHTS</h2>
+      <p class="newsletter-text">No spam. No BS. Just actionable tech content every Monday.</p>
+      <form class="newsletter-form-inline">
+        <input type="email" class="newsletter-input-inline" placeholder="YOUR EMAIL ADDRESS" required>
+        <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+      </form>
+      <p class="newsletter-note">Join 15,000+ developers already subscribed.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <span class="brand-bracket">[</span>
+          <span class="brand-text">CODEX</span>
+          <span class="brand-bracket">]</span>
+        </div>
+        <p class="footer-tagline">Neo-brutalist code education. Built different.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h3 class="footer-heading">LEARN</h3>
+        <ul class="footer-links">
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">Bootcamps</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h3 class="footer-heading">COMPANY</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CODEX LABS.</p>
     </div>
   </div>
 </footer>

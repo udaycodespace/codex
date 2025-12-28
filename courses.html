@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — CODEX LABS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="grain-overlay"></div>
+<div class="shape shape-1"></div>
+<div class="shape shape-2"></div>
+<div class="shape shape-3"></div>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-bracket">[</span>
+      <span class="brand-text">CODEX</span>
+      <span class="brand-bracket">]</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link active" href="courses.html">COURSES</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-cta ms-3">START NOW</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-title">CHOOSE YOUR PATH</h1>
+    <p class="page-subtitle">No fluff. No BS. Just courses that get you hired.</p>
+  </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="filter-section">
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">ALL COURSES</button>
+      <button class="filter-tab" data-filter="dev">DEVELOPMENT</button>
+      <button class="filter-tab" data-filter="design">DESIGN</button>
+      <button class="filter-tab" data-filter="data">DATA & AI</button>
+      <button class="filter-tab" data-filter="cloud">CLOUD & DEVOPS</button>
+    </div>
+  </div>
+</section>
+
+<!-- Courses Grid -->
+<section class="courses-section">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Course 1 -->
+      <div class="col-md-6 col-lg-4" data-category="dev">
+        <div class="course-card">
+          <div class="course-badge">BESTSELLER</div>
+          <div class="course-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h3 class="course-title">FULL-STACK MASTERY</h3>
+          <p class="course-desc">MERN Stack • Next.js • GraphQL • TypeScript</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 12 WEEKS</span>
+            <span><i class="bi bi-people"></i> 2.5K STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹24,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 2 -->
+      <div class="col-md-6 col-lg-4" data-category="data">
+        <div class="course-card">
+          <div class="course-badge hot">HOT</div>
+          <div class="course-icon">
+            <i class="bi bi-gpu-card"></i>
+          </div>
+          <h3 class="course-title">AI/ML ENGINEERING</h3>
+          <p class="course-desc">PyTorch • TensorFlow • Neural Networks • NLP</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 16 WEEKS</span>
+            <span><i class="bi bi-people"></i> 1.8K STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹29,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 3 -->
+      <div class="col-md-6 col-lg-4" data-category="design">
+        <div class="course-card">
+          <div class="course-icon">
+            <i class="bi bi-bezier2"></i>
+          </div>
+          <h3 class="course-title">UI/UX DESIGN PRO</h3>
+          <p class="course-desc">Figma • Framer • Design Systems • Animation</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 10 WEEKS</span>
+            <span><i class="bi bi-people"></i> 3.2K STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹19,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 4 -->
+      <div class="col-md-6 col-lg-4" data-category="dev">
+        <div class="course-card">
+          <div class="course-icon">
+            <i class="bi bi-phone"></i>
+          </div>
+          <h3 class="course-title">MOBILE DEV BOOTCAMP</h3>
+          <p class="course-desc">React Native • Flutter • iOS • Android</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 14 WEEKS</span>
+            <span><i class="bi bi-people"></i> 1.5K STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹27,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 5 -->
+      <div class="col-md-6 col-lg-4" data-category="cloud">
+        <div class="course-card">
+          <div class="course-badge">NEW</div>
+          <div class="course-icon">
+            <i class="bi bi-cloud-arrow-up"></i>
+          </div>
+          <h3 class="course-title">DEVOPS & CLOUD</h3>
+          <p class="course-desc">AWS • Docker • Kubernetes • CI/CD</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 12 WEEKS</span>
+            <span><i class="bi bi-people"></i> 900 STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹26,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 6 -->
+      <div class="col-md-6 col-lg-4" data-category="dev">
+        <div class="course-card">
+          <div class="course-icon">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+          <h3 class="course-title">BLOCKCHAIN DEV</h3>
+          <p class="course-desc">Solidity • Web3 • Smart Contracts • DApps</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 10 WEEKS</span>
+            <span><i class="bi bi-people"></i> 750 STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹22,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 7 -->
+      <div class="col-md-6 col-lg-4" data-category="data">
+        <div class="course-card">
+          <div class="course-icon">
+            <i class="bi bi-bar-chart"></i>
+          </div>
+          <h3 class="course-title">DATA SCIENCE PRO</h3>
+          <p class="course-desc">Python • Pandas • SQL • Tableau • Stats</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 14 WEEKS</span>
+            <span><i class="bi bi-people"></i> 2.1K STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹23,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 8 -->
+      <div class="col-md-6 col-lg-4" data-category="dev">
+        <div class="course-card">
+          <div class="course-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+          <h3 class="course-title">CYBERSECURITY</h3>
+          <p class="course-desc">Ethical Hacking • Pentesting • Security</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 12 WEEKS</span>
+            <span><i class="bi bi-people"></i> 1.2K STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹25,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Course 9 -->
+      <div class="col-md-6 col-lg-4" data-category="design">
+        <div class="course-card">
+          <div class="course-icon">
+            <i class="bi bi-brush"></i>
+          </div>
+          <h3 class="course-title">MOTION DESIGN</h3>
+          <p class="course-desc">After Effects • Blender • Animation</p>
+          <div class="course-meta">
+            <span><i class="bi bi-clock"></i> 8 WEEKS</span>
+            <span><i class="bi bi-people"></i> 650 STUDENTS</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">₹18,999</div>
+            <a href="contact.html" class="btn btn-course">ENROLL NOW</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">// PRICING</span>
+      <h2 class="section-title">FLEXIBLE PLANS</h2>
+    </div>
+    
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-plan">SINGLE COURSE</h3>
+            <div class="pricing-price">
+              <span class="currency">₹</span>
+              <span class="amount">19,999</span>
+            </div>
+            <p class="pricing-desc">Perfect for focused learning</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> 1 Course Access</li>
+            <li><i class="bi bi-check-circle-fill"></i> Lifetime Updates</li>
+            <li><i class="bi bi-check-circle-fill"></i> Certificate</li>
+            <li><i class="bi bi-check-circle-fill"></i> Community Access</li>
+            <li class="disabled"><i class="bi bi-x-circle"></i> 1-on-1 Mentorship</li>
+            <li class="disabled"><i class="bi bi-x-circle"></i> Career Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-pricing">GET STARTED</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="pricing-card featured">
+          <div class="popular-badge">MOST POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="pricing-plan">PRO BUNDLE</h3>
+            <div class="pricing-price">
+              <span class="currency">₹</span>
+              <span class="amount">49,999</span>
+            </div>
+            <p class="pricing-desc">3 courses + mentorship</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> 3 Course Access</li>
+            <li><i class="bi bi-check-circle-fill"></i> Lifetime Updates</li>
+            <li><i class="bi bi-check-circle-fill"></i> Certificate</li>
+            <li><i class="bi bi-check-circle-fill"></i> Community Access</li>
+            <li><i class="bi bi-check-circle-fill"></i> 1-on-1 Mentorship</li>
+            <li><i class="bi bi-check-circle-fill"></i> Career Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-pricing-featured">GET STARTED</a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-plan">ALL ACCESS</h3>
+            <div class="pricing-price">
+              <span class="currency">₹</span>
+              <span class="amount">99,999</span>
+            </div>
+            <p class="pricing-desc">Unlimited everything</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> All Courses</li>
+            <li><i class="bi bi-check-circle-fill"></i> Lifetime Updates</li>
+            <li><i class="bi bi-check-circle-fill"></i> Certificate</li>
+            <li><i class="bi bi-check-circle-fill"></i> Community Access</li>
+            <li><i class="bi bi-check-circle-fill"></i> 1-on-1 Mentorship</li>
+            <li><i class="bi bi-check-circle-fill"></i> Priority Career Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-pricing">GET STARTED</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <span class="brand-bracket">[</span>
+          <span class="brand-text">CODEX</span>
+          <span class="brand-bracket">]</span>
+        </div>
+        <p class="footer-tagline">Neo-brutalist code education. Built different.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h3 class="footer-heading">LEARN</h3>
+        <ul class="footer-links">
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">Bootcamps</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h3 class="footer-heading">COMPANY</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CODEX LABS.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
